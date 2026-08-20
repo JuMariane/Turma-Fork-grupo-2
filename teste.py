@@ -7,9 +7,11 @@ def adicionar_aluno():
 
 def listar_alunos():
     print("\n--- ALUNOS ---")
-
+    print()
     for aluno in alunos:
         print(aluno)
+    print()
+    print("Número de alunos: " + str(len(alunos)))
 
 while True:
 
