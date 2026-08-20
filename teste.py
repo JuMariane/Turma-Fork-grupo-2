@@ -12,6 +12,14 @@ def listar_alunos():
         print("Nenhum aluno cadastrado tesr.")
     for aluno in alunos:
         print(aluno)
+    print()
+    print("Número de alunos: " + str(len(alunos)))
+
+def exclusao():
+    nome = input("Digite o nome do aluno: ")
+    alunos.remove(nome)
+    print("Aluno removido com sucesso!")
+
 
 def buscar_aluno():
     nome_busca = input("Digite o nome do aluno que deseja buscar: ")
@@ -34,6 +42,8 @@ while True:
 
     if opcao == "1":
         adicionar_aluno()
+
+
 
     elif opcao == "2":
         listar_alunos()
